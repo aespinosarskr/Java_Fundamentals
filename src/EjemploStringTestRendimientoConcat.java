@@ -14,10 +14,13 @@ public class EjemploStringTestRendimientoConcat {
             sb.append(a).append(b).append("\n");
         }
 
+        System.gc();//Se agrega Garbage collector
+
         long fin = System.currentTimeMillis();
         System.out.println(fin - inicio);
         System.out.println("c = " + c);
         System.out.println("sb = " + sb.toString());
+        System.exit(0);
 
 
     }
